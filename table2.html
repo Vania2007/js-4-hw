@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      td {
+        border: solid;
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let nRows = +prompt("Input count of rows");
+      let nCol = +prompt("Input count of collumns");
+      document.write("<table>");
+      for (let i = 1; i <= nRows; i++) {
+        document.write(`<tr></tr>`);
+        for (let j = 0; j < nCol; j++) {
+          document.write(`<td>№${i}</td>`);
+        }
+      }
+      document.write("</table>");
+    </script>
+  </body>
+</html>

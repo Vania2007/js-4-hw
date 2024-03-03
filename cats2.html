@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let n = 0;
+      n = +prompt("Скільки котиків?");
+      let k = 0;
+      k = +prompt("Скільки котиків у рядку?");
+      let m = Math.ceil(n / k);
+      let residue = n;
+
+      for (let i = 0; i < m; i++) {
+        if (residue >= k) {
+          for (let j = 0; j < k; j++) {
+            document.write(`<img src="./images/cats.jpg" alt="cats"" />`);
+            residue--;
+          }
+        } else {
+          for (let j = 0; j < residue; j++) {
+            document.write(`<img src="./images/cats.jpg" alt="cats"" />`);
+          }
+        }
+        document.write(`<br/>`);
+      }
+      document.write(`Ви вивели ${n} котиків`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      td {
+        border: solid;
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        padding: 0 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let n = +prompt("Input row number");
+      document.write("<table>");
+      for (let i = 1; i <= n; i++) {
+        document.write(
+          `<tr><td>№${i}</td><td><img src="./images/flowers.jpg" alt=""></td></tr>`
+        );
+      }
+      document.write("</table>");
+    </script>
+  </body>
+</html>
